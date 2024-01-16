@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\truon\\OneDrive\\Desktop\\New folder\\NewProject\\NewProject.csproj": {}
+    "C:\\Users\\truon\\OneDrive\\Desktop\\BTTHPTPMQL\\NewProject\\NewProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\truon\\OneDrive\\Desktop\\New folder\\NewProject\\NewProject.csproj": {
+    "C:\\Users\\truon\\OneDrive\\Desktop\\BTTHPTPMQL\\NewProject\\NewProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\truon\\OneDrive\\Desktop\\New folder\\NewProject\\NewProject.csproj",
+        "projectUniqueName": "C:\\Users\\truon\\OneDrive\\Desktop\\BTTHPTPMQL\\NewProject\\NewProject.csproj",
         "projectName": "NewProject",
-        "projectPath": "C:\\Users\\truon\\OneDrive\\Desktop\\New folder\\NewProject\\NewProject.csproj",
+        "projectPath": "C:\\Users\\truon\\OneDrive\\Desktop\\BTTHPTPMQL\\NewProject\\NewProject.csproj",
         "packagesPath": "C:\\Users\\truon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\truon\\OneDrive\\Desktop\\New folder\\NewProject\\obj\\",
+        "outputPath": "C:\\Users\\truon\\OneDrive\\Desktop\\BTTHPTPMQL\\NewProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\truon\\AppData\\Roaming\\NuGet\\NuGet.Config"
