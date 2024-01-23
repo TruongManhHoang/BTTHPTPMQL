@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Trương Mạnh Hoàng</h2>
+    <h2>2121050062</h2>
+<h1>The input value attribute</h1>
+
+<p>The value attribute specifies an initial value for an input field:</p>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John" readonly><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe">
+  </form>
+  <form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John" disabled><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe">
+  </form>
+  <form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" size="50"><br>
+    <label for="pin">PIN:</label><br>
+    <input type="text" id="pin" name="pin" size="4">
+  </form>
+  <form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" size="50"><br>
+    <label for="pin">PIN:</label><br>
+    <input type="text" id="pin" name="pin" maxlength="4" size="4">
+  </form>
+  <form>
+    <input list="browsers">
+    <datalist id="browsers">
+      <option value="Edge">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+  </form>
+</body>
+</html>
+
