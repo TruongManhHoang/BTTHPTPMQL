@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using MvcMovie.Models;
+using ProjectMVC.Models;
 
 namespace ProjectMVC.Controllers;
 
