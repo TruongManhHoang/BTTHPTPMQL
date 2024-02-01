@@ -1,6 +1,6 @@
 namespace ProjectMVC.Models;
 
-public class SinhVien : Person{
+public class Student : Person{
     public string FullName {get; set;}
     public string Address {get; set;}
     public int Age {get; set;}

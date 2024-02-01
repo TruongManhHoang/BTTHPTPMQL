@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using ProjectMVC.Models;
+using MvcMovie.Models;
 
-namespace ProjectMVC.Controllers;
+namespace MvcMovie.Controllers;
 
 public class SinhVienController : Controller{
     //GET:/Person/

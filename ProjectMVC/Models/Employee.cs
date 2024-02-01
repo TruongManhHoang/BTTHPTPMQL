@@ -5,5 +5,4 @@ public class Employee{
     public string FullName {get; set;}
     public string Age {get; set;}
     public string Salary {get; set;}
-    
 }

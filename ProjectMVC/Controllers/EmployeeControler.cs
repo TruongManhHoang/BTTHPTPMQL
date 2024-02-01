@@ -14,4 +14,6 @@ public class EmployeeController : Controller{
         ViewBag.info = stOutput;
         return View();
     }
+    private static List<Employee> employees = new List<Employee>();
+    
 }

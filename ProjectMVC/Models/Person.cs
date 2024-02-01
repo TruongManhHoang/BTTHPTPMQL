@@ -14,6 +14,12 @@ public class Person{
         Address = Console.ReadLine();
         System.Console.Write("Age = ");
         age = Convert.ToInt16(Console.ReadLine());
+
+        try{
+            age = Convert.ToInt16(Console.ReadLine());
+        }catch(Exception e){
+            age = 0;
+        }
     }
     public void Display(){
         System.Console.WriteLine("{0} - {1} - {2} tuoi", FullName, Address, age);

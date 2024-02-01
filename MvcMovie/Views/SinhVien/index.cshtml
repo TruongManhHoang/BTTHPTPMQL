@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "SinhVien";
+}
+<h1>Dữ liệu từ Controller gửi về là: @ViewBag.info</h1>
+
+<form asp-action="index">
+    <label>Nhập họ tên: </label>
+    <input type="text" name="FullName"><br>
+    <label>Nhập địa chỉ: </label>
+    <input type="text" name="Address"><br>
+    <label>Nhập tuổi: </label>
+    <input type="number" name="Age"><br>
+    <label>Nhập số điện thoại: </label>
+    <input type="number" name="PhoneNumber"><br>
+    <input type="submit" value="Gửi dữ liệu">
+</form>
