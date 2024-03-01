@@ -18,28 +18,12 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\truon\OneDrive\Desktop\BTTHPTPMQL\MvcMovie
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/truon/OneDrive/Desktop/BTTHPTPMQL/MvcMovie/ProjectMVC/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UHJvamVjdE1WQ1xWaWV3c1xIb21lXEluZGV4LmNzaHRtbA==
+[C:/Users/truon/OneDrive/Desktop/BTTHPTPMQL/MvcMovie/Views/Employee/AddEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQWRkRW1wbG95ZWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/truon/OneDrive/Desktop/BTTHPTPMQL/MvcMovie/ProjectMVC/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UHJvamVjdE1WQ1xWaWV3c1xIb21lXFByaXZhY3kuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/truon/OneDrive/Desktop/BTTHPTPMQL/MvcMovie/ProjectMVC/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UHJvamVjdE1WQ1xWaWV3c1xTaGFyZWRcRXJyb3IuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/truon/OneDrive/Desktop/BTTHPTPMQL/MvcMovie/ProjectMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UHJvamVjdE1WQ1xWaWV3c1xTaGFyZWRcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/truon/OneDrive/Desktop/BTTHPTPMQL/MvcMovie/ProjectMVC/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UHJvamVjdE1WQ1xWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/truon/OneDrive/Desktop/BTTHPTPMQL/MvcMovie/ProjectMVC/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UHJvamVjdE1WQ1xWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+[C:/Users/truon/OneDrive/Desktop/BTTHPTPMQL/MvcMovie/Views/Employee/Display.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGlzcGxheS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/truon/OneDrive/Desktop/BTTHPTPMQL/MvcMovie/Views/Employee/index.cshtml]
@@ -48,6 +32,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/truon/OneDrive/Desktop/BTTHPTPMQL/MvcMovie/Views/HelloWorld/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9Xb3JsZFxpbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/truon/OneDrive/Desktop/BTTHPTPMQL/MvcMovie/Views/HeThongPhanPhoi/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVUaG9uZ1BoYW5QaG9pXGluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/truon/OneDrive/Desktop/BTTHPTPMQL/MvcMovie/Views/Home/Index.cshtml]
@@ -70,8 +58,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/truon/OneDrive/Desktop/BTTHPTPMQL/MvcMovie/Views/SinhVien/index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2luaFZpZW5caW5kZXguY3NodG1s
+[C:/Users/truon/OneDrive/Desktop/BTTHPTPMQL/MvcMovie/Views/Student/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxpbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/truon/OneDrive/Desktop/BTTHPTPMQL/MvcMovie/Views/_ViewImports.cshtml]
@@ -81,10 +69,6 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/truon/OneDrive/Desktop/BTTHPTPMQL/MvcMovie/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/truon/OneDrive/Desktop/BTTHPTPMQL/MvcMovie/ProjectMVC/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UHJvamVjdE1WQ1xWaWV3c1xTaGFyZWRcX0xheW91dC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = b-06p3t8jc9y
 
 [C:/Users/truon/OneDrive/Desktop/BTTHPTPMQL/MvcMovie/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s

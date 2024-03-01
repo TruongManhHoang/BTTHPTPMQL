@@ -1,0 +1,11 @@
+@{
+    ViewData["Title"] = "HeThongPhanPhoi";
+}
+<h1>Dữ liệu của bạn vừa nhập là: @ViewBag.info</h1>
+<form asp-action="index">
+    <label>Nhập MaHTPP </label>
+    <input type="text" name="MaHTPP"><br>
+    <label>Nhập tên HTPP: </label>
+    <input type="text" name="TenHTPP"><br>
+    <input type="submit" value="Gửi dữ liệu">
+</form>
