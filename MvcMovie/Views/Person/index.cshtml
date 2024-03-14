@@ -1,14 +1,33 @@
-@{
-    ViewData["Title"] = "Person";
-}
-<h1>Dữ liệu từ Controller gửi về là: @ViewBag.info</h1>
+@model IEnumerable<MvcMovie.Models.Person>
 
-<form asp-action="index">
-    <label>Nhập PersonID </label>
-    <input type="text" name="PersonId"><br>
-    <label>Nhập họ tên: </label>
-    <input type="text" name="FullName"><br>
-    <label>Nhập địa chỉ: </label>
-    <input type="text" name="Address"><br>
-    <input type="submit" value="Gửi dữ liệu">
-</form>
+@{
+    ViewData["Title"] = "Index";
+}    
+<h1>Index</h1>
+<p>
+    <a asp-action="create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FullName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model){
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.FullName)</td>
+                <td>@Html.DisplayFor(modelItem => item.Address)</td>
+                <td>
+                    <a asp-action="edit" asp-route-id="@item.PersonId">Edit</a>
+                    <a asp-action="delete" asp-route-id="@item.PersonId">Delete</a>
+                </td>
+            </tr> 
+        }
+    </tbody>
+</table>
