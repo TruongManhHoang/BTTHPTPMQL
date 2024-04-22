@@ -69,7 +69,7 @@ public class PersonController : Controller{
         }
         return View(person);
     }
-    [HttpPost]
+    [HttpPost, ActionName("Delete")]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> deleteConfirmed(string id){
         if(_context.Person == null){
