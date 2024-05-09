@@ -1,9 +1,5 @@
 namespace MvcMovie.Models;
 
-public class Employee{
+public class Employee : Person{
     public string EmployeeId {get; set;}
-    public string FullName {get; set;}
-    public string Age {get; set;}
-    public string Salary {get; set;}
-    
 }

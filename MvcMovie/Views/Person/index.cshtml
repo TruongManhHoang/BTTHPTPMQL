@@ -4,12 +4,19 @@
     ViewData["Title"] = "Index";
 }    
 <h1>Index</h1>
+<form asp-action="index">
+        <lindexabel>Search:   </lindexabel><input type="text" name="name"/>
+        <input type="submit" value="Tìm kiếm"/>
+    </form>
 <p>
     <a asp-action="create">Create New</a>
 </p>
 <table class="table">
     <thead>
         <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PersonId)
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.FullName)
             </th>
@@ -19,8 +26,10 @@
         </tr>
     </thead>
     <tbody>
+    @if(Model != null){    
         @foreach(var item in Model){
             <tr>
+                <td>@Html.DisplayFor(modelItem => item.PersonId)</td>
                 <td>@Html.DisplayFor(modelItem => item.FullName)</td>
                 <td>@Html.DisplayFor(modelItem => item.Address)</td>
                 <td>
@@ -29,5 +38,6 @@
                 </td>
             </tr> 
         }
+    }    
     </tbody>
 </table>

@@ -7,13 +7,17 @@ using MvcMovie.Models;
 namespace MvcMovie.Controllers;
 
 public class PersonController : Controller{
-    private readonly ApplicationDbcontext _context;
-    public PersonController(ApplicationDbcontext context){
+    private readonly ApplicationDbContext _context;
+    public PersonController(ApplicationDbContext context){
         _context = context;
     }
     public async Task<IActionResult> index(){
         var model = await _context.Person.ToListAsync();
         return View(model);
+    }
+    [HttpPost]
+    public async Task<IActionResult> index(String name){
+        return View( await _context.Person.Where(e => e.FullName.Contains(name)).ToListAsync());
     }
     public IActionResult create(){
         return View();

@@ -1,16 +1,56 @@
-@{
-    ViewData["Title"] = "SinhVien";
-}
-<h1>Dữ liệu từ Controller gửi về là: @ViewBag.info</h1>
+@model IEnumerable<MvcMovie.Models.Student>
 
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
 <form asp-action="index">
-    <label>Nhập họ tên: </label>
-    <input type="text" name="FullName"><br>
-    <label>Nhập địa chỉ: </label>
-    <input type="text" name="Address"><br>
-    <label>Nhập tuổi: </label>
-    <input type="number" name="Age"><br>
-    <label>Nhập số điện thoại: </label>
-    <input type="number" name="PhoneNumber"><br>
-    <input type="submit" value="Gửi dữ liệu">
-</form>
+        <label>Search: </label><input type="text" name="name"/>
+        <input type="submit" value="Tìm kiếm"/>
+    </form>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FullName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Age)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhoneNumber)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FullName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhoneNumber)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.StudentId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.StudentId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.StudentId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
