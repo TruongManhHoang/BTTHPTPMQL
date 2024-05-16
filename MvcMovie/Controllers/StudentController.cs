@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MvcMovie.Data;
+using MvcMovie.Models.Process;
 using MvcMovie.Models;
 
 namespace MvcMovie.Controllers
@@ -13,6 +14,7 @@ namespace MvcMovie.Controllers
     public class StudentController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private ExcelProcess _excelProcess = new ExcelProcess();
 
         public StudentController(ApplicationDbContext context)
         {
@@ -157,5 +159,37 @@ namespace MvcMovie.Controllers
         {
             return _context.Student.Any(e => e.StudentId == id);
         }
+        public async Task<IActionResult> Upload(){
+        return View();
+    }
+    [HttpPost, ActionName("Upload")]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Upload(IFormFile file){
+        if(file != null){
+            string fileExtentsion = Path.GetExtension(file.FileName);
+            if(fileExtentsion != ".xls" && fileExtentsion != ".xlsx"){
+                ModelState.AddModelError("", "Please choose excel file to upload!");
+            }else{
+                var fileName = DateTime.Now.ToShortTimeString + fileExtentsion;
+                var filePath = Path.Combine(Directory.GetCurrentDirectory() + "/Uploads/Excels", fileName);
+                var fileLocation = new FileInfo(filePath).ToString();
+                using (var stream = new FileStream(filePath, FileMode.Create)){
+                    await file.CopyToAsync(stream);
+                    var dt = _excelProcess.ExcelToDataTable(fileLocation);
+                    for(int i = 0; i < dt.Rows.Count; i++){
+                        var sd = new Student();
+                        sd.StudentId = dt.Rows[i][0].ToString();
+                        sd.FullName = dt.Rows[i][1].ToString();
+                        sd.Address = dt.Rows[i][2].ToString();
+                        _context.Add(sd);
+                    }
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+
+            }
+        }
+        return View();
+    }
     }
 }
