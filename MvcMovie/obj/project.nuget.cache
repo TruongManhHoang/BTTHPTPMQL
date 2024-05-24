@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ewvpEg1b3lZyBgVmHstLbuQoRdw6l9nMFfKIKzCKA7aD66/STMRNS03650KIctp+rDZepoFowqEB421gA7sJ0w==",
+  "dgSpecHash": "0u5PluckR8D++rPqbP/X33asKYbo7M9LLlFfzJg/iAdk+QIVkk6Ny3lLGnEgYjw2Ys7dB/9tEgAfGxK3F+oGgA==",
   "success": true,
   "projectFilePath": "D:\\BTTHPTPMQL\\BTTHPTPMQL\\MvcMovie\\MvcMovie.csproj",
   "expectedPackageFiles": [
@@ -180,7 +180,9 @@
     "C:\\Users\\truon\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
     "C:\\Users\\truon\\.nuget\\packages\\system.threading.tasks.dataflow\\7.0.0\\system.threading.tasks.dataflow.7.0.0.nupkg.sha512",
     "C:\\Users\\truon\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\truon\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512"
+    "C:\\Users\\truon\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512",
+    "C:\\Users\\truon\\.nuget\\packages\\x.pagedlist\\9.1.2\\x.pagedlist.9.1.2.nupkg.sha512",
+    "C:\\Users\\truon\\.nuget\\packages\\x.pagedlist.mvc.core\\9.1.2\\x.pagedlist.mvc.core.9.1.2.nupkg.sha512"
   ],
   "logs": []
 }
